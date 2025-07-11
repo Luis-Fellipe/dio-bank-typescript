@@ -1,38 +1,61 @@
-# Desenvolvendo o Dio Bank
-desenvolvido por [Nathally Souza](https://github.com/nathyts)
+# Projeto TypeScript - Dio Bank 🏦
 
-#### Projeto desenvolvido com conceitos básicos de typescript
+## 📌 Sobre o Projeto
 
-### Tecnologias
-- Typescript
+Este projeto foi desenvolvido como parte da formação em TypeScript da [Dio.me](https://www.dio.me/), com o objetivo de praticar os fundamentos de Programação Orientada a Objetos (POO) utilizando a linguagem TypeScript.  
+A aplicação simula um sistema bancário simples via terminal, com diferentes tipos de contas e regras específicas para operações como depósito, saque e empréstimo.
 
-### Como rodar o projeto
+---
 
-1 - Clone o repositório
+## ✅ Funcionalidades Implementadas
 
-2 - Instale as dependeências
-    
-    npm install
+- Criação de contas do tipo pessoa física, jurídica e bônus
+- Depósito e saque com validações
+- Empréstimo exclusivo para contas empresariais com status ativo
+- Conta especial com bônus fixo de +10 em depósitos
+- Atributos privados e protegidos, garantindo encapsulamento
+- Imutabilidade dos campos `name` e `accountNumber`
 
-3 - Execute o projeto
+---
 
-    npm run dev
+## 🛠️ Tecnologias Utilizadas
 
-#### Desafios
-[ ] Implementar os métodos de depósito (deposit) e saque (withdraw) na classe DioAccount
-  - Os valores dos saldos devem ser alterados, de acordo com o valor informado para depósito
-  - Apenas contas com o status true e saldo (balance) maior que o valor solicitado podem fazer saques
+- TypeScript
+- Node.js
+- TSX
 
-[ ] Implementar o método de empréstimo (getLoan) na classe CompanyAccount
-  - Os valores do saldos deve ser acrescidos, de acordo com o valor informado para empréstimo
-  - Apenas contas com o status true podem fazer empréstimo
+---
 
-[ ] Criar um novo tipo de conta a partir da DioAccount
-  - Esta conta não deve receber novos atributos
-  - Esta conta terá um método de depósito, que acresce 10 a mais ao valor informado para depósito. (Ex: Um depósito de 100, será de 110 no final)
+## ▶️ Como Executar
 
-[ ] Todos os atributos de qualquer conta devem ser privados
+Antes de começar, certifique-se de ter o **Node.js** e o **npm** instalados em sua máquina.
 
-[ ] Os atributos name e accountNumber não podem ser alterados internamente ou externamente
+1. Clone o repositório e acesse a pasta:
 
-[ ] Criar instancias para cada um dos tipos de conta no app.ts e executar os métodos possíveis.
+```bash
+git clone https://github.com/seu-usuario/dio-bank-typescript.git
+cd dio-bank-typescript
+```
+
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Execute o projeto:
+
+```bash
+npm run start:dev
+```
+
+> Para executar em modo observador (auto reload a cada mudança), use:
+> ```bash
+> npm run start:watch
+> ```
+
+---
+
+## 🔗 Contato
+
+[www.linkedin.com/in/luis-fellipe-real](https://www.linkedin.com/in/luis-fellipe-real)
